@@ -1,0 +1,16 @@
+default: &default
+  adapter: mysql2
+  pool: 10
+  timeout: 5000
+
+development:
+  <<: *default
+  database: ar_scoping_with_assoc_development
+
+test:
+  <<: *default
+  database: ar_scoping_with_assoc_test
+
+production:
+  <<: *default
+  database: ar_scoping_with_assoc_production

@@ -1,0 +1,21 @@
+language: ruby
+rvm:
+  - 2.5
+  - 2.6
+services:
+  - mysql
+  - postgresql
+addons:
+  postgresql: "9.5"
+env:
+  - DATABASE=sqlite
+  - DATABASE=mysql
+  - DATABASE=postgresql
+gemfile:
+  - gemfiles/rails60.gemfile
+before_script:
+  - cd spec/dummy
+  - bundle exec rake db:create db:migrate db:seed RAILS_ENV=test
+  - cd ../..
+script:
+  - bundle exec rspec

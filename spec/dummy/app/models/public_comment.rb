@@ -1,0 +1,2 @@
+class PublicComment < Comment
+end
