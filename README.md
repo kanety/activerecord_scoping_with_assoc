@@ -1,6 +1,6 @@
 # ActiveRecordScopingWithAssoc
 
-Merge scoping including associations such as rails 5.
+Merge scoping to associations in the same way as activerecord5.
 
 ## Dependencies
 

@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ActiveRecordScopingWithAssoc::VERSION
   spec.authors       = ["Yoshikazu Kaneta"]
   spec.email         = ["kaneta@sitebridge.co.jp"]
-  spec.summary       = %q{Merge scoping including associations}
-  spec.description   = %q{Merge scoping including associations}
+  spec.summary       = %q{Merge scoping to associations}
+  spec.description   = %q{Merge scoping to associations}
   spec.homepage      = "https://github.com/kanety/activerecord_scoping_with_assoc"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
