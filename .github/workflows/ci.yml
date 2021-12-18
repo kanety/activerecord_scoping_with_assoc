@@ -25,8 +25,13 @@ jobs:
       fail-fast: false
       matrix:
         ruby: [2.5, 2.6, 2.7, 3.0]
-        gemfile: ['rails60', 'rails61']
+        gemfile: ['rails60', 'rails61', 'rails70']
         database: ['sqlite', 'mysql', 'postgresql']
+        exclude:
+          - ruby: 2.5
+            gemfile: rails70
+          - ruby: 2.6
+            gemfile: rails70
 
     name: ruby ${{ matrix.ruby }}, ${{ matrix.gemfile }}, ${{ matrix.database }}
 
