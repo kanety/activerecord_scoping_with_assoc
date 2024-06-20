@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'activerecord_scoping_with_assoc/version'
 require 'activerecord_scoping_with_assoc/association'
 require 'activerecord_scoping_with_assoc/relation'

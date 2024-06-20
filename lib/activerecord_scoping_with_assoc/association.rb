@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ActiveRecordScopingWithAssoc
   module Association
     def target_scope
