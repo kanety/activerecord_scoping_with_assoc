@@ -4,8 +4,8 @@ Merge scoping to associations in the same way as activerecord5.
 
 ## Dependencies
 
-* ruby 2.5+
-* activerecord 6.0
+* ruby 3.0+
+* activerecord 7.0+
 
 ## Installation
 
